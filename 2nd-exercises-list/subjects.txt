@@ -1,0 +1,7 @@
+Subjects seen until this commit:
+
+1. Variables, constants and data types (characters, numerics, alphanumerics and logic/boolean);
+2. Intro to operators (logic, relational and arithmetic);
+3. Syntax basics;
+4. Compilation;
+5. Decision Structures (if-else-if, switch-case, break).
