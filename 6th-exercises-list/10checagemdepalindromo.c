@@ -19,9 +19,10 @@ int main (){
     printf("\nDigite uma string: ");
     fgets(string, 43, stdin);
     
-    //Preenchendo nova string com a string recebida, porem desconsiderando espacos, virgulas e possiveis newlines
+    //Preenchendo nova string com a string recebida, porem desconsiderando espacos, virgulas,
+    //newlines e hifens.
     for (i = 0, j = 0; i < strlen(string); i++, j++){
-        if (string[j] == '\n' | string[j] == ' ' | string[j] == ',') //Excecoes
+        if (string[j] == '\n' | string[j] == ' ' | string[j] == ',' | string[j] == '-') //Excecoes
         {
             i--;
         }
