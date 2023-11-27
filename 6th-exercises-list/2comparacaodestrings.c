@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /*
 2. Crie um programa que compara duas strings (não use a função strcmp).
@@ -8,11 +9,11 @@ int main (){
     char string1[25], string2[25];
     int i, flag = 0;
     printf("\nDigite qualquer coisa: ");
-    scanf("%s", string1);
+    fgets(string1, 25, stdin);
     printf("\nDigite qualquer coisa novamente: ");
-    scanf("%s", string2);
+    fgets(string2, 25, stdin);
     
-    for (i = 0; i < 25; i++)
+    for (i = 0; i < strlen(string1); i++)
         if (string1[i] != string2[i]) flag = 1;
     
     if (flag == 0) printf("\nAs strings sao iguais.");
