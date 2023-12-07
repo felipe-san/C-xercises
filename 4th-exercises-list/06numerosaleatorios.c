@@ -9,13 +9,15 @@ deve acusar se o número digitado está no vetor ou não. Se estiver, diga a pos
 
 int main (){
     float rand_nums[10], num = -1;
-    int i, presente = 0;
+    int i, presente = 0, seed;
     
     printf("\nGerando conjunto de 10 numeros aleatorios.\n");
-    
+    srand(seed);
+
     for (i = 0; i < 10; i++){
         rand_nums[i] = rand() % 20;
     }
+    
     while (num > 20 | num < 0){
         printf("\nDigite um numero entre 0 e 20: ");
         scanf("%f", &num);
